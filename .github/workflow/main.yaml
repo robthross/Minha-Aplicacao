@@ -1,0 +1,16 @@
+on:
+  workflows_dispatch:
+  push:
+
+permissions:
+  id-token: write
+
+jobs:
+  terraform-frontend:
+    runs_on: ubuntu-latest
+    steps:
+      - name: Configurando Credencial AWS
+      uses: aws-actions/configure-aws-credentials@v3
+        with:
+          role-to-assume: arn:aws:iam::944710019594:role/github-actions-terraform
+          aws-region: us-east-1
