@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "pyupdate"
-    key    = "meuteste/"
+    key    = "meuteste"
     region = "us-east-1"
   }
   required_providers {
