@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   terraform-frontend:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Configurando Credencial AWS
       uses: aws-actions/configure-aws-credentials@v3
