@@ -13,7 +13,7 @@ jobs:
       - name: Configurando Credencial AWS
         uses: aws-actions/configure-aws-credentials@v3
         with:
-          role-to-assume: arn:aws:iam::944710019594:role/github-actions-terraform
+          role-to-assume: arn:aws:iam::944710019594:role/Web-Static
           aws-region: us-east-1
       - name: CheckOut Source Code
         uses: actions/checkout@v2

@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "pyupdate"
-    key    = "meuteste"
+    key    = "meuteste/terraform.tfstate"
     region = "us-east-1"
   }
   required_providers {
@@ -15,6 +15,4 @@ terraform {
 provider "aws" {
   # Configuration options
   region     = var.region
-  access_key = var.AWS_ACCES_KEY_ID
-  secret_key = var.AWS_SECRET_ACCESS_KEY
 }
